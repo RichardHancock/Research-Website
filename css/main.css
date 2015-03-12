@@ -178,6 +178,7 @@ img {
 .fontbackground{
     margin: 10px 30px;
     background-image: url(../img/fontbackground.png);
+    padding: 10px 0;
 }
 
 .graph
@@ -205,8 +206,29 @@ img {
 
 
 
+.lightboxImage
+{
+    display: inline;
+    float: left;
+    margin: 10px 30px;
+    background-image: url(../img/planks_jungle.png);
+    padding: 10px;
+}
 
+.lightboxImage a img
+{
+    display: inline;
+}
 
+.lightboxImage span
+{
+    display: block;
+    margin: 5px auto 0px auto;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+}
 
 
 /* ==========================================================================
