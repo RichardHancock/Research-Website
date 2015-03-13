@@ -60,9 +60,13 @@ body{
 	background-image: url(../img/bookshelf.png);
 }
 
-h1,h2, h3, h4 {
+h1,h2, h3 {
     text-align: center;
     margin: 10px 0;
+}
+
+.center {
+    text-align: center;
 }
 
 a {
@@ -73,6 +77,11 @@ a {
 .title{
 	padding-top:10px;
 	font-family: 'Press Start 2P', cursive;
+}
+
+.subTitle
+{
+    margin-left: 30px;
 }
 
 .wrapper {
@@ -187,12 +196,14 @@ img {
     margin: 0 auto;
 }
 
+/*
 .portfolioImage
 {
     float: left;
     display: inline;
     margin-right: 15px;
 }
+*/
 
 .footer
 {
@@ -206,7 +217,7 @@ img {
 
 
 
-.lightboxImage
+.lightboxImage, .portfolioImage
 {
     display: inline;
     float: left;
@@ -215,12 +226,12 @@ img {
     padding: 10px;
 }
 
-.lightboxImage a img
+.lightboxImage, a img
 {
     display: inline;
 }
 
-.lightboxImage span
+.lightboxImage span, .portfolioImage span
 {
     display: block;
     margin: 5px auto 0px auto;
@@ -229,6 +240,13 @@ img {
     font-size: 12pt;
     text-align: center;
 }
+
+
+/*
+END OF OUR CSS
+*/
+
+
 
 
 /* ==========================================================================
