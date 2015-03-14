@@ -2,7 +2,7 @@
 var beingUsed = false;
 
 
-function switchPerson(person)
+function switchItem(item)
 {
 	//Checks if the buttons are currently enabled
 	if(!beingUsed)
@@ -10,30 +10,30 @@ function switchPerson(person)
     	//Disables the other buttons
     	beingUsed = true;
 
-    	//Checks which person was passed in, and sets the relevant css class name
-    	switch(person)
+    	//Checks which item was passed in, and sets the relevant css class name
+    	switch(item)
 	    {
-	        case "Harry":
-	            className = ".harry";
+	        case 1:
+	            className = ".item1Content";
 	        break;
-	        case "Jamie":
-	            className = ".jamie";
+	        case 2:
+	            className = ".item2Content";
 	        break;
-	        case "Richard":
-	            className = ".richard";
+	        case 3:
+	            className = ".item3Content";
 	        break;
 	        default:
 	        	//Unhandled parameter, exit function
-	            console.log("Error: Invalid person given to switchPerson()");
+	            console.log("Error: Invalid item given to switchItem()");
 	            beingUsed = false;
 	            return -1;
 	        break;
 	    }
 
-	    //Checks if the person's page is already displayed
+	    //Checks if the item's content is already displayed
 	    if($(className).hasClass('jqueryChosenItem'))
 	    {
-	        //This person is already displayed so no switch needed
+	        //This item is already displayed so no switch needed
 	        //console.log("No switch needed");
 	        beingUsed = false;
 	        return 0;
@@ -41,8 +41,10 @@ function switchPerson(person)
 
 	    //Fade out the currently shown item over 400ms
 	    $(".jqueryChosenItem").fadeOut('400', function() {
+
 	        //Once fade out complete fade in the selected item over 400ms
 	        $(className).fadeIn('400', function() {
+
 	        	//Once fade in complete, it sets this class as chosen item
 	        	$(".jqueryChosenItem").removeClass('jqueryChosenItem');
 	        	$(className).addClass('jqueryChosenItem');
@@ -51,52 +53,5 @@ function switchPerson(person)
 	        	beingUsed = false;
 	        });
 	    });
-    }
-    
-}
-
-//Could merge this with the previous but seems kinda pointless for this small amount of code
-//Look at previous for documentation
-function switchItem(item)
-{
-	console.log("Test");
-	if(!beingUsed)
-    {
-    	beingUsed = true;
-
-    	switch(item)
-	    {
-	        case "Keyboard":
-	            className = ".keyboard";
-	        break;
-	        case "Touchscreen":
-	            className = ".touchscreen";
-	        break;
-	        case "Gamepad":
-	            className = ".gamepad";
-	        break;
-	        default:
-	            console.log("Error: Invalid item given to switchItem()");
-	            beingUsed = false;
-	            return -1;
-	        break;
-	    }
-
-	    if($(className).hasClass('jqueryChosenItem'))
-	    {
-	        //This person is already displayed so no switch needed
-	        console.log("No switch needed");
-	        beingUsed = false;
-	        return 0;
-	    }
-
-	    $(".jqueryChosenItem").fadeOut('400', function() {
-	        
-	        $(className).fadeIn('400', function() {
-	        	$(".jqueryChosenItem").removeClass('jqueryChosenItem');
-	        	$(className).addClass('jqueryChosenItem');
-	        	beingUsed = false;
-	        });
-	    });
-    }
+    }   
 }

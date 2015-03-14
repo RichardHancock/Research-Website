@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/lightbox.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		
@@ -34,43 +35,73 @@
             <div class="contentBody">
                 <h2 class="title">The Results</h2>
                 <div class="jquery3ItemDisplay">
-                    <div class="item1" onclick="switchItem('Keyboard')">
-                        <img src="http://dummyimage.com/280x200/000/fff" alt="Keyboard and Mouse"/>
+                    <div class="item1" onclick="switchItem(1)">
+                        <img src="img/keyboard.png" alt="Keyboard and Mouse"/>
                     </div>
-                    <div class="item2" onclick="switchItem('Touchscreen')">
-                        <img src="http://dummyimage.com/280x200/000/fff" alt="Touchscreen"/>
+                    <div class="item2" onclick="switchItem(2)">
+                        <img src="img/touchscreen.png" alt="Touchscreen"/>
                     </div>
-                    <div class="item3" onclick="switchItem('Gamepad')">
-                        <img src="http://dummyimage.com/280x200/000/fff" alt="Gamepad"/>
+                    <div class="item3" onclick="switchItem(3)">
+                        <img src="img/controller.png" alt="Gamepad"/>
+                    </div>
+                    <div class="displayHelper">
+                        Click on one of the input methods above to see its results
                     </div>
                 </div>
                 <div class="contentBox">
 					<div class="fontbackground">
-                        <div class="keyboard jqueryChosenItem">
+                        <div class="item1Content jqueryChosenItem">
                             <h3>Keyboard &amp; Mouse</h3>
                             <h4 class="center">Average Time</h4>
-                            <img class="graph" src="img/graphTmp.jpg" alt="Graph showing the average time people using the Keyboard and Mouse took to complete the task."/>
+
+                            <div class="lightboxImageCentered">
+                                <a href="img/keyboardBar.png" data-lightbox="keyboardBar" data-title="
+                                Graph showing the average time people using the Keyboard and Mouse took to complete the task.">
+                                    <img src="img/keyboardBar-Small.png" alt="Graph showing the average time people using the Keyboard and Mouse took to complete the task."/>
+                                </a>
+                                <span>Click on the image for larger version</span>
+                            </div>
+
                             <h4 class="center">Users' Experience</h4>
-                            <p>
-                                blah
+                            <img class="graph" src="img/keyboardRating.png" alt="5.5 out of 6 prefered the keyboard and mouse overall"/>
+                            <p class="graphComment">
+                                5.5 out of 6 participants prefered the Keyboard and Mouse overall
                             </p>
                         </div>
-                        <div class="touchscreen">
+                        <div class="item2Content">
                             <h3>Touchscreen</h3>
                             <h4 class="center">Average Time</h4>
-                            <img class="graph" src="img/graphTmp.jpg" alt="Graph showing the average time people using the Touchscreen took to complete the task."/>
+
+                            <div class="lightboxImageCentered">
+                                <a href="img/touchscreenBar.png" data-lightbox="touchscreenBar" data-title="
+                                Graph showing the average time people using the Touchscreen took to complete the task.">
+                                    <img src="img/touchscreenBar-Small.png" alt="Graph showing the average time people using the Touchscreen took to complete the task."/>
+                                </a>
+                                <span>Click on the image for larger version</span>
+                            </div>
+
                             <h4 class="center">Users' Experience</h4>
-                            <p>
-                                blah
+                            <img class="graph" src="img/touchscreenRating.png" alt="0 out of 6 prefered the touchscreen overall"/>
+                            <p class="graphComment">
+                                0 out of 6 participants prefered the Touchscreen overall
                             </p>
                         </div>
-                        <div class="gamepad">
+                        <div class="item3Content">
                             <h3>Gamepad</h3>
                             <h4 class="center">Average Time</h4>
-                            <img class="graph" src="img/graphTmp.jpg" alt="Graph showing the average time people using the Gamepad took to complete the task."/>
+
+                            <div class="lightboxImageCentered">
+                                <a href="img/gamepadBar.png" data-lightbox="gamepadBar" data-title="
+                                Graph showing the average time people using the Gamepad took to complete the task.">
+                                    <img src="img/gamepadBar-Small.png" alt="Graph showing the average time people using the Gamepad took to complete the task."/>
+                                </a>
+                                <span>Click on the image for larger version</span>
+                            </div>
+
                             <h4 class="center">Users' Experience</h4>
-                            <p>
-                                blah
+                            <img class="graph" src="img/gamepadRating.png" alt="0.5 out of 6 prefered the gamepad overall"/>
+                            <p class="graphComment">
+                                0.5 out of 6 participants prefered the Gamepad overall
                             </p>
                         </div>
                         
@@ -85,6 +116,8 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/lightbox.min.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

@@ -129,7 +129,7 @@ a {
 .jquery3ItemDisplay
 {
     width: 1000px;
-    height: 264px;
+    height: 284px;
     background-image: url(../img/wool_colored_white.png);
     text-align: center;
 }
@@ -149,6 +149,12 @@ a {
     margin-top: 32px;
 }
 
+.displayHelper
+{
+    font-size: 20pt;
+    font-weight: bold;
+}
+
 .item2
 {
     margin-left: 50px;
@@ -159,12 +165,8 @@ img {
     display: block;
 }
 
-.harry, .jamie
-{
-    display: none;
-}
 
-.gamepad, .touchscreen
+.item2Content, .item3Content
 {
     display: none;
 }
@@ -190,21 +192,6 @@ img {
     padding: 10px 0;
 }
 
-.graph
-{
-    display: block;
-    margin: 0 auto;
-}
-
-/*
-.portfolioImage
-{
-    float: left;
-    display: inline;
-    margin-right: 15px;
-}
-*/
-
 .footer
 {
     height: auto;
@@ -215,8 +202,6 @@ img {
 	font-weight: bold;
 }
 
-
-
 .lightboxImage, .portfolioImage
 {
     display: inline;
@@ -226,12 +211,20 @@ img {
     padding: 10px;
 }
 
+.lightboxImageCentered
+{
+    width: 800px;
+    margin: 10px auto;
+    background-image: url(../img/planks_jungle.png);
+    padding: 10px;
+}
+
 .lightboxImage, a img
 {
     display: inline;
 }
 
-.lightboxImage span, .portfolioImage span
+.lightboxImage span, .portfolioImage span, .lightboxImageCentered span
 {
     display: block;
     margin: 5px auto 0px auto;
@@ -241,6 +234,15 @@ img {
     text-align: center;
 }
 
+.graph
+{
+    margin: 0 auto;
+}
+
+.graphComment
+{
+    text-align: center;
+}
 
 /*
 END OF OUR CSS
