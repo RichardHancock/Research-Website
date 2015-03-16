@@ -5,8 +5,6 @@ This website uses Google fonts, which are some custom fonts that require interne
 to be fetched from Google servers. The website can still be run locally, the computer just needs
 internet access or some less suitable backup fonts will be used.
 
-
-
 The website was built on top of the HTML5 Boilerplate. This provides Boilerplate HTML code with some JavaScript plugins 
 and css that help with compatibility in older browsers (I£ 6+). We are not using any of their pre-made website 
 designs/templates, just the raw framework (i.e All the CSS they provide is used to fix problems on older browsers). 
@@ -14,6 +12,7 @@ For more information on this, visit this website:
 https://html5boilerplate.com/
 
 As this adds a ton of extra files, below I will list all the files that we made or have heavily modified:
+conclusion.html
 experiment.html
 favicon.ico
 index.html
@@ -28,7 +27,14 @@ Richard - Web Developer (Developed the back-end, initial structure (HTML/CSS/Jav
 Jamie - Web Designer (Designed and implemented the look of the website (HTML/CSS)), Site Content
 Harry - Site Content
 
-References:  
+Compatibility:
+Chrome, Firefox, Opera, IE11, IE10, IE9 - No Problems 
+IE8 - Works Perfectly, Some minor styling missing (Lack of CSS3)
+IE7 - Some Content Obstructed
+IE6 - Visually broken, still functional
+
+
+Website References:  
   
 GoogleFonts 'Press Start 2P', 'Ubuntu'
 http://www.google.com/fonts/specimen/Press+Start+2P
@@ -45,3 +51,6 @@ http://lokeshdhakar.com/projects/lightbox2/
 
 Title Font:  
 http://www.dafont.com/fipps.font  
+
+Minecraft Assets:
+From Minecraft
